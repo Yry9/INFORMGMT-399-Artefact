@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Interaction Analytics Dashboard：本地运行版
 
 此项目把 React 前端和 Spring Boot 后端整理成两个独立目录。账户、学生、作业、AI 交互记录、最终作业文本和审核状态保存在本地 H2 数据库；首次使用请自行注册账户，没有预置演示账户。
@@ -61,3 +62,6 @@ AI-Interaction-Analytics-Ready-to-Run/
 ├── frontend/   React + Vite 页面
 └── backend/    Spring Boot REST API + H2 数据库
 ```
+=======
+# INFORMGMT-399-Artefact
+>>>>>>> 614412db080b48bacb1e9326198ceee33661695f
