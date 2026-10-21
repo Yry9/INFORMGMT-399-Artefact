@@ -36,7 +36,7 @@ function Calendar({
       captionLayout={captionLayout}
       formatters={{
         formatMonthDropdown: (date) =>
-          date.toLocaleString('default', { month: 'short' }),
+          date.toLocaleString('en-NZ', { month: 'short' }),
         ...formatters,
       }}
       classNames={{
@@ -189,7 +189,7 @@ function CalendarDayButton({
       ref={ref}
       variant="ghost"
       size="icon"
-      data-day={day.date.toLocaleDateString()}
+      data-day={day.date.toLocaleDateString('en-NZ')}
       data-selected-single={
         modifiers.selected &&
         !modifiers.range_start &&

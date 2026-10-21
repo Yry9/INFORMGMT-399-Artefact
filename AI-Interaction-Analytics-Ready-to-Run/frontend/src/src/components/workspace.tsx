@@ -10,7 +10,7 @@ const interactionTypes = [
   { value: 'REVISION', label: 'Revision' }, { value: 'REFLECTION', label: 'Reflection' },
 ];
 const kindLabel = (kind: Interaction['type']) => interactionTypes.find(item => item.value === kind)?.label ?? kind;
-const formatDate = (value?: string | null) => value ? new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(value)) : 'No activity yet';
+const formatDate = (value?: string | null) => value ? new Intl.DateTimeFormat('en-NZ', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(value)) : 'No activity yet';
 
 function AppShell({ children, currentPath, user, assessment, onLogout }: { children: ReactNode; currentPath: string; user: User; assessment: Assessment | null; onLogout: () => void }) {
   return <div className="app-shell">
